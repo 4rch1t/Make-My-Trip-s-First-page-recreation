@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Make <span>My</span> Trip</div>
+    <ul class="menu">
+      <li>Flights</li>
+      <li>Hotels</li>
+      <li>Homestays & Villas</li>
+      <li>Holiday Packages</li>
+      <li>Trains</li>
+      <li>Buses</li>
+      <li>Cabs</li>
+      <li>Travel Insurance</li>
+    </ul>
+    <div class="dropdowns">
+      <select>
+        <option>IN | ENG</option>
+        <option>FR | FR</option>
+      </select>
+      <select>
+        <option>INR</option>
+        <option>USD</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <form class="search-form">
+        <!-- Trip Type -->
+        <div class="trip-type">
+          <label><input type="radio" name="trip" checked> One Way</label>
+          <label><input type="radio" name="trip"> Round Trip</label>
+          <label><input type="radio" name="trip"> Multi-City</label>
+        </div>
+
+        <!-- Input Fields -->
+        <div class="input-group">
+          <div class="input-field">
+            <label>From</label>
+            <input type="text" placeholder="Chennai">
+          </div>
+          <div class="input-field">
+            <label>To</label>
+            <input type="text" placeholder="London">
+          </div>
+          <div class="input-field">
+            <label>Departure</label>
+            <input type="date">
+          </div>
+          <div class="input-field">
+            <label>Return</label>
+            <input type="text" placeholder="Tap to add a return date">
+          </div>
+          <div class="input-field">
+            <label>Travellers & Class</label>
+            <input type="text" placeholder="1 Traveller, Economy">
+          </div>
+        </div>
+
+        <!-- Fare Options -->
+        <div class="fare-options">
+          <button type="button" class="special-fare">EXTRA SAVINGS</button>
+          <label><input type="radio" name="fare" checked> Regular</label>
+          <label><input type="radio" name="fare"> Student</label>
+        </div>
+
+        <!-- Search Button -->
+        <button class="search-button">Search</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
